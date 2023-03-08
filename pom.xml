@@ -6,13 +6,13 @@
   <artifactId>practise-more</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-<!--    <module>netty-demo</module>-->
+    <module>netty-demo</module>
     <module>spring-series-demo</module>
     <module>tomcat-demo</module>
   </modules>
   <packaging>pom</packaging>
 
-  <name>netty-demo</name>
+  <name>practise-more</name>
   <url>http://maven.apache.org</url>
 
   <properties>
