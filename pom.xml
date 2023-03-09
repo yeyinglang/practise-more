@@ -9,6 +9,8 @@
     <module>netty-demo</module>
     <module>spring-series-demo</module>
     <module>tomcat-demo</module>
+    <module>jdk-api-demo</module>
+    <module>third-api-demo</module>
   </modules>
   <packaging>pom</packaging>
 
