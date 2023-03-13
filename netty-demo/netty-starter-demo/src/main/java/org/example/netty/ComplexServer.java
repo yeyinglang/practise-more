@@ -35,7 +35,7 @@ public class ComplexServer {
                 .channel(NioServerSocketChannel.class)
                 .childHandler(new ChannelInitializer<NioSocketChannel>() {
                     protected void initChannel(NioSocketChannel ch) throws Exception {
-                        ch.pipeline().addLast(new StringDecoder()).addLast(new ChannelInboundHandlerAdapter(){
+                        ch.pipeline().addLast(new ChannelInboundHandlerAdapter(){
                             @Override
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                 ByteBuf byteBuf = (ByteBuf)msg;

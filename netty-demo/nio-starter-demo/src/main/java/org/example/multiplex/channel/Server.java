@@ -14,8 +14,8 @@ public class Server {
         try(ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();Selector selector = Selector.open();) {
             serverSocketChannel.bind(new InetSocketAddress(8090));
             printMsg("configure blocking");
-//         true ，那么还是正常的阻塞模式；
 
+//         true ，报错；
             serverSocketChannel.configureBlocking(false);
 
             printMsg("register selector");
