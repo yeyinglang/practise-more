@@ -9,10 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-import-demo</module>
-        <module>spring-mybatis-demo</module>
-        <module>spring-mvc-demo</module>
-        <module>spring-tomcat-demo</module>
+<!--        <module>spring-import-demo</module>-->
+<!--        <module>spring-mybatis-demo</module>-->
+<!--        <module>spring-mvc-demo</module>-->
+<!--        <module>spring-tomcat-demo</module>-->
+        <module>spring-vertx-demo</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
