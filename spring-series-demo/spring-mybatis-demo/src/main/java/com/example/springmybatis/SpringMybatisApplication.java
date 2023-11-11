@@ -12,6 +12,7 @@ public class SpringMybatisApplication {
         ConfigurableApplicationContext context = SpringApplication.run(SpringMybatisApplication.class, args);
         StudentService bean = context.getBean(StudentService.class);
 //        bean.insertStudent();
+        bean.queryStudent();
         System.out.println("hello");
     }
 

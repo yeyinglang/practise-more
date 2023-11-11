@@ -1,6 +1,7 @@
 package org.example.aqs;
 
 import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ConsumerProducer {
@@ -10,6 +11,7 @@ public class ConsumerProducer {
             new Thread(new Consumer(repo)).start();
             new Thread(new Producer(repo)).start();
         }
+//        LockSupport.parkNanos();
 
     }
 
@@ -39,6 +41,7 @@ public class ConsumerProducer {
                 }else {
                     System.out.println("消费1个，仓库还剩下" + num);
                 }
+                notEmpty.signal();
                 notEmpty.signalAll();
                 lock.unlock();
             } catch (InterruptedException e) {

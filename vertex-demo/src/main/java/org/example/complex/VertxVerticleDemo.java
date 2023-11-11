@@ -5,6 +5,9 @@ import io.vertx.core.Promise;
 
 import java.nio.charset.StandardCharsets;
 
+/**
+ *
+ */
 public class VertxVerticleDemo extends AbstractVerticle {
     @Override
     public void start(Promise<Void> startPromise) throws Exception {
