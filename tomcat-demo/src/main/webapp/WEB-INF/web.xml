@@ -12,4 +12,13 @@
         <servlet-name>demo-start</servlet-name>
         <url-pattern>/demo-start</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>demo-start2</servlet-name>
+        <servlet-class>com.example.DemoController2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>demo-start2</servlet-name>
+        <url-pattern>/demo-start2</url-pattern>
+    </servlet-mapping>
 </web-app>
